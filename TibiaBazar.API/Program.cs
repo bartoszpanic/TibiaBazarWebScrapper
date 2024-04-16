@@ -21,8 +21,9 @@ if (app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 
 
-app.MapGet("/test", () =>
+app.MapGet("/test", (IScrapperService scrapper) =>
 {
+    var result = scrapper.Scrap();
     return "test";
 })
 .WithName("test")

@@ -5,5 +5,5 @@ namespace TibiaBazar.Application.Services.Interfaces;
 
 public interface IScrapperService
 {
-    public Result<List<Auction>> Scrap();
+    public Task<Result<List<Auction>>> Scrap();
 }
