@@ -11,4 +11,9 @@
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\TibiaBazar.Application\TibiaBazar.Application.csproj" />
+    <ProjectReference Include="..\TibiaBazar.Persistence\TibiaBazar.Persistence.csproj" />
+  </ItemGroup>
+
 </Project>

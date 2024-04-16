@@ -1,12 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using FluentResults;
+using TibiaBazar.Domain.Entity;
 
-namespace TibiaBazar.Application.Services.Interfaces
+namespace TibiaBazar.Application.Services.Interfaces;
+
+public interface IScrapperService
 {
-    internal class IScrapperService
-    {
-    }
+    public Result<List<Auction>> Scrap();
 }
