@@ -3,17 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34622.214
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TibiaBazar.Start", "TibiaBazar.Start\TibiaBazar.Start.csproj", "{B6C78F25-CD5A-47CA-A562-F4561B1CFF98}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TibiaBazar.Domain", "TibiaBazar.Domain\TibiaBazar.Domain.csproj", "{383528FF-D2EE-4455-BB33-213AB9BAB12A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TibiaBazar.Domain", "TibiaBazar.Domain\TibiaBazar.Domain.csproj", "{383528FF-D2EE-4455-BB33-213AB9BAB12A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TibiaBazar.Application", "TibiaBazar.Application\TibiaBazar.Application.csproj", "{1AF30012-74DE-47AE-A19B-F8FF1C5D0D00}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TibiaBazar.Application", "TibiaBazar.Application\TibiaBazar.Application.csproj", "{1AF30012-74DE-47AE-A19B-F8FF1C5D0D00}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TibiaBazar.Persistence", "TibiaBazar.Persistence\TibiaBazar.Persistence.csproj", "{71EBF1B0-AC57-447B-AA92-164BDDD7DA2F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TibiaBazar.Persistence", "TibiaBazar.Persistence\TibiaBazar.Persistence.csproj", "{71EBF1B0-AC57-447B-AA92-164BDDD7DA2F}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TibiaBazar.Tests", "TibiaBazar.Tests\TibiaBazar.Tests.csproj", "{FE85B3C5-113A-49F3-8491-CDE29CF38AED}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TibiaBazar.Tests", "TibiaBazar.Tests\TibiaBazar.Tests.csproj", "{FE85B3C5-113A-49F3-8491-CDE29CF38AED}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{464628F3-2DD6-4804-B4E2-7C7BDFCF1893}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TibiaBazar.API", "TibiaBazar.API\TibiaBazar.API.csproj", "{B8551AB8-3561-4CB2-A810-89EA7AF35054}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,10 +21,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{B6C78F25-CD5A-47CA-A562-F4561B1CFF98}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B6C78F25-CD5A-47CA-A562-F4561B1CFF98}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B6C78F25-CD5A-47CA-A562-F4561B1CFF98}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B6C78F25-CD5A-47CA-A562-F4561B1CFF98}.Release|Any CPU.Build.0 = Release|Any CPU
 		{383528FF-D2EE-4455-BB33-213AB9BAB12A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{383528FF-D2EE-4455-BB33-213AB9BAB12A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{383528FF-D2EE-4455-BB33-213AB9BAB12A}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -41,6 +37,10 @@ Global
 		{FE85B3C5-113A-49F3-8491-CDE29CF38AED}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FE85B3C5-113A-49F3-8491-CDE29CF38AED}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FE85B3C5-113A-49F3-8491-CDE29CF38AED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B8551AB8-3561-4CB2-A810-89EA7AF35054}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8551AB8-3561-4CB2-A810-89EA7AF35054}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8551AB8-3561-4CB2-A810-89EA7AF35054}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B8551AB8-3561-4CB2-A810-89EA7AF35054}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -49,6 +49,8 @@ Global
 		{383528FF-D2EE-4455-BB33-213AB9BAB12A} = {464628F3-2DD6-4804-B4E2-7C7BDFCF1893}
 		{1AF30012-74DE-47AE-A19B-F8FF1C5D0D00} = {464628F3-2DD6-4804-B4E2-7C7BDFCF1893}
 		{71EBF1B0-AC57-447B-AA92-164BDDD7DA2F} = {464628F3-2DD6-4804-B4E2-7C7BDFCF1893}
+		{FE85B3C5-113A-49F3-8491-CDE29CF38AED} = {464628F3-2DD6-4804-B4E2-7C7BDFCF1893}
+		{B8551AB8-3561-4CB2-A810-89EA7AF35054} = {464628F3-2DD6-4804-B4E2-7C7BDFCF1893}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {DADF30A9-5E80-4634-9767-39089D2ED518}

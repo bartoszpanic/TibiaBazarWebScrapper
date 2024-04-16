@@ -4,12 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TibiaBazar.Domain.Enum
+namespace TibiaBazar.Application.Services
 {
-    public enum Vocation
+    internal class ScrapperService
     {
-        Druid,
-        ElderDruid,
-
     }
 }

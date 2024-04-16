@@ -7,6 +7,9 @@ public class Character
     public string Name { get; set; } = string.Empty;
     public int Level { get; set; }
     public World World { get; set; } = new();
-    public Vocation Vocation { get; set; }
+    public string Vocation { get; set; } = string.Empty;
     public Sex Sex { get; set; }
 }
+
+
+
